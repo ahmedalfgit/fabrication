@@ -1,26 +1,47 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment, Component } from 'react';
+import { render } from 'react-dom';
+import { Router } from '@reach/router';
+import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.scss';
+import NavBarMemu from './components/header';
+import FooterBar from './components/footer';
+import Home from './Home';
+import Design from './Design';
+import Laser from './Laser';
+import Press from './Press';
+import Flex from './Flex';
+import Weld from './Welding';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+    this.connecToServer = this.connecToServer.bind(this);
+  }
+  connecToServer() {
+    fetch('/');
+  }
+  componentDidMount() {
+    this.connecToServer();
+  }
+
+  render() {
+    return (
+      <Fragment>
+        <NavBarMemu />
+        <Router>
+          <Home path="/" />
+          <Design path="/Design" />
+          <Laser path="/Laser" />
+          <Press path="/Press" />
+          <Flex path="/Flex" />
+          <Weld path="/Weld" />
+        </Router>
+        <FooterBar />
+      </Fragment>
+    );
+  }
 }
 
 export default App;

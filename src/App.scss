@@ -1,0 +1,565 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab:wght@700&family=Roboto:wght@700&display=swap");
+
+body {
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+
+  .navBar-bg {
+    background-color: #cacaca4f !important;
+  }
+  h1,
+  h2 {
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 1.3px;
+    line-height: 2em;
+  }
+  h3,
+  h4,
+  h5,
+  h6 {
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    font-family: "Roboto", sans-serif;
+  }
+  .nav-link {
+    font-family: "Roboto", sans-serif;
+    padding-right: 2.5rem !important;
+  }
+  p,
+  a,
+  li {
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+  }
+  .p-18px {
+    font-size: 18px;
+  }
+  .p-16px {
+    font-size: 16px;
+  }
+  .loading-img {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+  }
+
+  .main-container {
+    background-color: #023650;
+
+    .project-row {
+      height: 100%;
+      background-image: url(../src/assets/fab-bg.jpg);
+
+      .project-row-container {
+        max-width: 1315px;
+        max-height: 933px;
+        background-color: #023650;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+        .project-col {
+          .project-icons-row {
+            .project-header-col {
+            }
+
+            .project-list-col {
+              transition: top 0.3s linear;
+
+              &.show {
+                top: 0rem;
+              }
+
+              .project-list-col-row {
+                .project-list {
+                  display: grid;
+                  list-style: none;
+                  padding-left: 0;
+
+                  .project-item {
+                    display: block;
+                    width: 100%;
+                    justify-content: center;
+
+                    img {
+                      width: 12%;
+                      cursor: pointer;
+                      margin: 0 1.5rem;
+                      padding: 3px 4px;
+
+                      &.active {
+                        border-left: 3px solid rgba(255, 102, 0, 0.719);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .project-details {
+            .fab-form {
+              opacity: 0;
+              transition: opacity 1s linear;
+
+              &.show {
+                opacity: 1;
+              }
+            }
+
+            .project-input {
+              border-color: #d5d5d5;
+              border-radius: 4px;
+              margin: 0.6rem 0rem;
+              border-style: solid;
+
+              &.text-area {
+                padding-top: 1rem !important;
+                height: 61px;
+              }
+            }
+
+            .css-2b097c-container {
+              margin: 0.6rem 0rem;
+
+              .css-g1d714-ValueContainer {
+                cursor: pointer;
+                padding: 0.5rem;
+                border-color: #d5d5d5;
+              }
+            }
+
+            .project-details-row {
+              position: relative;
+              bottom: 14rem;
+              transition: bottom 0.3s linear;
+
+              &.show {
+                bottom: 0rem;
+              }
+            }
+          }
+        }
+      }
+
+      .video-col {
+        text-align: center;
+        // background-color: $video;
+
+        .video-item {
+          list-style: none;
+          padding: 2rem 0rem;
+
+          & h1 {
+            text-align: center;
+            font-weight: 600;
+            color: #fff;
+          }
+
+          .list {
+            .item {
+              list-style: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .App {
+    text-align: center;
+  }
+
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+  .App-link {
+    color: #d0f500;
+  }
+
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .w-1396 {
+    max-width: 1450px;
+
+    .w-648 {
+      max-width: 700px;
+      max-height: 600px;
+      padding-top: 2rem !important;
+      background-color: #1b4860;
+
+      .laserBox {
+        width: 700px;
+        height: 600px;
+
+        .contentBox {
+          .boxH1 {
+            padding: 1.5rem 0rem 0rem 0rem;
+            text-align: center;
+            letter-spacing: 2px;
+          }
+          .boxText {
+            font-size: 18px;
+            padding: 1.2rem 0.5rem 0rem 0.5rem;
+            letter-spacing: 1.5px;
+            line-height: 2rem;
+            height: 361px;
+          }
+          .btn-orange {
+            display: inline;
+            background-color: #f77f00;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .design-container {
+    background-color: #023650;
+
+    .design-container {
+      max-width: 1700px;
+
+      .design-software-h2 {
+        padding-bottom: 0.3rem;
+        border-bottom: 1px solid rgb(240, 239, 239);
+      }
+
+      .softwareList {
+        font-size: 20px;
+      }
+    }
+  }
+  .laser-container,
+  .press-container,
+  .weld-container,
+  .flex-container {
+    max-width: 1800px;
+
+    .laser-col {
+      background-color: #02273a;
+
+      .laser-ul {
+        padding-left: 0rem;
+        list-style-position: inside;
+
+        .laser-benefits {
+          font-size: 20px;
+        }
+        .laser-benefit-item {
+          padding: 1rem 0rem 0rem 1rem;
+          font-size: 16px;
+        }
+      }
+    }
+    .press-col {
+      background-color: #023650;
+      border-radius: 0% 0% 70% 0%;
+      -moz-border-radius: 0% 0% 70% 0%;
+      -webkit-border-radius: 0% 0% 70% 0%;
+
+      .press-text-box {
+        width: 80%;
+      }
+    }
+
+    .weld-col {
+      background-color: #023650;
+      border-radius: 1.5% 30% 1.5% 0%;
+
+      .weld-text-box {
+        width: 80%;
+      }
+    }
+    .flex-col {
+      background-color: #023650;
+      border-radius: 0% 6% 0% 6%;
+      -moz-border-radius: 0% 6% 0% 6%;
+      -webkit-border-radius: 0% 6% 0% 6%;
+
+      .flex-text-box {
+        width: 80%;
+      }
+    }
+  }
+  .laser-h2 {
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid rgb(240, 239, 239);
+  }
+  .laser-img {
+    position: relative;
+    top: 55%;
+    right: 13%;
+  }
+  .press-img {
+    position: relative;
+    top: 4%;
+    right: 11%;
+    width: 100%;
+  }
+  .flex-img {
+    position: relative;
+    top: 26%;
+    right: 12%;
+    width: 100%;
+  }
+  .welder-img {
+    width: 100%;
+    position: relative;
+    top: 40%;
+    right: 13%;
+  }
+  .w-47 {
+    width: 47%;
+  }
+  .laser-bed {
+    background-image: url(../src/assets/laser-bed-inch-small.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 268px;
+    position: relative;
+    left: 27%;
+
+    .konvajs-content {
+      canvas {
+        padding: 1rem 1.1rem 0.8rem 1.2rem !important;
+      }
+    }
+  }
+  .weld-title {
+    // position: absolute;
+    // top: 44%;
+    // left: 13%;
+    // transform: 0 0;
+    // transform: rotate(-90deg);
+  }
+  .laser-ul {
+    .laser-item {
+      font-size: 20px;
+    }
+  }
+  .fab-project-row {
+    background-color: #f2ece1;
+
+    .fab-project-container {
+      max-width: 1100px;
+    }
+  }
+  .a-link:hover {
+    text-decoration: none;
+  }
+  .w-80 {
+    width: 80%;
+  }
+  .border-bottom {
+    border-bottom: 1px solid #6a6a6a !important;
+  }
+  .slider-col {
+    max-height: 700px;
+
+    .carousel-height {
+      max-height: 670px;
+    }
+    .sliderBtn {
+      background: #3687a0;
+      border: none;
+      color: #fff;
+    }
+    .buttonBack {
+      position: absolute;
+      top: 50%;
+      left: 0%;
+    }
+    .buttonNext {
+      position: absolute;
+      top: 50%;
+      right: 6.5%;
+    }
+  }
+
+  .footer {
+    background-color: #eff6ee;
+    border-top: 0.1px solid #00000014;
+
+    .footer-title {
+      color: rgb(43, 43, 43);
+    }
+    .certification-list {
+      display: block ruby;
+    }
+
+    .footer-item-link {
+      color: rgb(126, 126, 126);
+
+      &:hover {
+        text-decoration: none;
+        color: rgb(5, 5, 5);
+      }
+    }
+    .font-size-15px {
+      font-size: 15px;
+    }
+    .socail-media {
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid #80808059;
+
+      .socail-media-icon {
+        color: rgb(126, 126, 126);
+        font-size: 12px;
+
+        &:hover {
+          color: rgb(5, 5, 5);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .letter-space-2px {
+    letter-spacing: 2px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    h1 {
+      line-height: 1.3em !important;
+    }
+    .logo-w-75 {
+      width: 75%;
+    }
+    .call-icon {
+      width: 10% !important;
+    }
+    .navbar-toggler-icon {
+      background-color: #9eb9c67d;
+    }
+    .w-1396 {
+      width: 100%;
+      .w-648 {
+        max-width: 100% !important;
+        max-height: 100% !important;
+        .laserBox {
+          width: 100% !important;
+          height: 100% !important;
+
+          .text-right {
+            text-align: center !important;
+          }
+        }
+      }
+    }
+    .main-container {
+      .project-row {
+        .project-row-container {
+          .vp-center {
+            height: 205px;
+          }
+          .project-col {
+            .project-icons-row {
+              .project-list-col {
+                .project-list-col-row {
+                  .project-list {
+                    .project-item {
+                      img {
+                        width: 24% !important;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .video-col {
+            height: 100%;
+            .video-item {
+              height: 100%;
+              padding: 0px;
+              .h-229px {
+                max-height: 229px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .fab-project-row {
+      .fab-project-container {
+        .slider-col {
+          .buttonBack {
+            position: absolute;
+            top: 50%;
+          }
+          .buttonNext {
+            position: absolute;
+            top: 50%;
+            right: 0;
+          }
+        }
+      }
+    }
+    .laser-img {
+      position: relative;
+      top: 55%;
+      right: 0px;
+      width: 100%;
+    }
+    .press-img {
+      position: relative;
+      top: 4%;
+      right: 0%;
+      width: 100%;
+    }
+    .Goform-img {
+      max-width: 350px;
+    }
+    .flex-img {
+      position: relative;
+      right: 0%;
+    }
+    .welder-img {
+      right: 0;
+    }
+    .parent {
+      display: table;
+      .first-child {
+        display: table-header-group;
+        h3,
+        p {
+          padding: 0 15px 0 15px;
+        }
+      }
+      .second-child {
+        display: table-footer-group;
+      }
+    }
+  }
+}
