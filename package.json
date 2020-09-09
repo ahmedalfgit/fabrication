@@ -31,6 +31,8 @@
     "extends": "react-app"
   },
   "proxy": "http://localhost:3000",
+  "start_url": ".",
+  "homepage": "https://sxfabrication.herokuapp.com/",
   "browserslist": {
     "production": [
       ">0.2%",
