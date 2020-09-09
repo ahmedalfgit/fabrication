@@ -1,5 +1,4 @@
 const express = require('express');
-const createServer = require('http');
 const compression = require('compression');
 const morgan = require('morgan');
 const path = require('path');
