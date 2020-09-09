@@ -13,12 +13,8 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname + './public'));
 });
 
-app.post('/url', function (req, res) {
-  const url = req.body.url;
-
-  urlShortener.short(url, function (err, shortUrl) {
-    res.send(shortUrl);
-  });
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, 'build', 'index.html'));
 });
 
 app.listen(port, () => console.log(`url-shortener listening on port ${port}!`));
