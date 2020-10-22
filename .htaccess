@@ -7,6 +7,6 @@ RewriteCond %{HTTP:X-Forwarded-Proto} !https
 #If neither above conditions are met, redirect to https
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-RewriteRule ^(.*)$ https://www.serpentixgabrication.com/$1 [R,L]
+RewriteRule ^(.*)$ https://www.serpentixfabrication.com/$1 [R,L]
 
-Redirect https://serpentixgabrication.com/ https://www.serpentixgabrication.com
+Redirect https://serpentixfabrication.com/ https://www.serpentixfabrication.com
