@@ -18,7 +18,7 @@ class Services extends Component {
       <div className="container pt-5 w-1396 pb-5">
         <div className="row pt-5 justify-content-between">
           <div className="laserBox row p-0 m-0">
-            <div className="col-md-6 p-0 m-0 w-648">
+            <div className="col-md-6 p-0 m-0 w-648 mt-5">
               <div className="laserBox row p-0 m-0">
                 <div className={`col-md-6 p-0 halfImg text-right`}>
                   <img src={laser} alt="Laser image" />
@@ -57,7 +57,7 @@ class Services extends Component {
               </div>
             </div>
           </div>
-          <div className="col-md-6 p-0 m-0 w-648">
+          <div className="col-md-6 p-0 m-0 w-648 mt-5">
             <div className="laserBox row p-0 m-0">
               <div className={`col-md-6 p-0 halfImg text-right`}>
                 <img src={press} alt="Laser image" />
