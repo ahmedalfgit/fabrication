@@ -103,7 +103,7 @@ const FooterBar = () => {
           <div className="col-md-7 text-center pt-3">
             <ul className="list d-inline-flex list-unstyled pt-md font-size-15px">
               Socail Media
-              <li className="item px-3 ml-md-4">
+              <li className="item px-3 ml-md-4 px-sm-2">
                 <a
                   href="https://www.facebook.com/serpentixcorp/"
                   className="socail-media-icon"
@@ -111,7 +111,7 @@ const FooterBar = () => {
                   Facebook
                 </a>
               </li>
-              <li className="item px-3">
+              <li className="item px-3 px-sm-2">
                 <a
                   href="https://www.youtube.com/channel/UCUll0gP9oHrR9ZEPIYwkwAw"
                   className="socail-media-icon"
@@ -119,7 +119,7 @@ const FooterBar = () => {
                   Youtube
                 </a>
               </li>
-              <li className="item px-3">
+              <li className="item px-3 px-sm-2">
                 <a
                   href="https://www.instagram.com/serpentixcorporation/"
                   className="socail-media-icon"
@@ -127,7 +127,7 @@ const FooterBar = () => {
                   Instagram
                 </a>
               </li>
-              <li className="item px-3">
+              <li className="item px-3 px-sm-2">
                 <a
                   href="https://www.linkedin.com/company/serpentix-corporation/"
                   className="socail-media-icon"

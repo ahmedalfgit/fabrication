@@ -355,13 +355,6 @@ body {
       }
     }
   }
-  .weld-title {
-    // position: absolute;
-    // top: 44%;
-    // left: 13%;
-    // transform: 0 0;
-    // transform: rotate(-90deg);
-  }
   .laser-ul {
     .laser-item {
       font-size: 20px;
@@ -565,8 +558,22 @@ body {
         display: table-footer-group;
       }
     }
-  }
-  .btn-orange {
-    margin-bottom: 3rem;
+    .btn-orange {
+      margin-bottom: 3rem;
+    }
+    .footer {
+      .font-size-15px {
+        font-size: 12px;
+
+        .px-sm-2 {
+          padding-left: 0.5rem !important;
+          padding-right: 0.5rem !important;
+
+          .socail-media-icon {
+            font-size: 9px;
+          }
+        }
+      }
+    }
   }
 }
