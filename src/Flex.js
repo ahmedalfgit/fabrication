@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
+import {Helmet} from 'react-helmet';
+
+//images
 import FlexImg from "../src/assets/flex-drill.png";
 import SawPic from "../src/assets/saw.png";
 import RollerPic from "../src/assets/roller.png";
@@ -15,6 +18,14 @@ class Drill extends Component {
 
   render() {
     return (
+      <div className="wrapper">
+        <Helmet>
+        <title>Machining</title>
+        <meta name="description" content="Serpentix Fabrication | CNC drilling, tapping, and milling. We have the machines and skills to convert your idea to a porject"/>
+        <meta name="keywords" content="Drilling, Tapping, Metal drilling, Metal forming, CNC drilling"/>
+
+        <meta charSet="utf-8" />
+      </Helmet>
       <div className="container-fluid bg-white">
         <div className="row pt-5">
           <div className="container flex-container">
@@ -186,6 +197,7 @@ class Drill extends Component {
             </div>
           </div>
         </div>
+      </div>
       </div>
     );
   }

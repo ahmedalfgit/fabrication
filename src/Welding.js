@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
+import {Helmet} from 'react-helmet';
+
+//images
 import WelderImg from "../src/assets/robotic-welder.png";
 import ProjectImg from "../src/assets/fab-project-img-1.jpg";
 import TIG1 from "../src/assets/TIG1.jpg";
@@ -24,6 +27,13 @@ class Drill extends Component {
 
   render() {
     return (
+      <div className="wrapper">
+        <Helmet>
+        <title>Welding</title>
+        <meta name="description" content="Serpentix Fabrication | We offer Robotic, MIG, TIG , and Stick welding. We also provide mobile welding | Aluminum, Stainless, and Mild welding"/>
+		<meta name="keywords" content="aluminum welding, stainless welding, mild steel welding, robotic welding, mig welding, tig welding, stick welding, mobile welding"/>
+        <meta charSet="utf-8" />
+      </Helmet>
       <div className="container-fluid bg-white">
         <div className="row pt-5">
           <div className="container weld-container">
@@ -145,6 +155,7 @@ class Drill extends Component {
             </div>
           </div>
         </div>
+      </div>
       </div>
     );
   }

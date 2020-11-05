@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
+import {Helmet} from 'react-helmet';
+
+//images
 import PressImg from "../src/assets/press-design.png";
 import GoformPic from "../src/assets/Goform.png";
 import PressCarousel from "./components/pressCarousel.js";
@@ -13,6 +16,13 @@ class Press extends Component {
 
   render() {
     return (
+      <div className="wrapper">
+        <Helmet>
+        <title>Metal Forming</title>
+        <meta name="description" content="Serpentix Fabrication | metal bending: aluminum, stainless, and mild. We have the software to form your parts."/>
+		<meta name="keywords" content="metal forming, metal bending, aluminum steel bending, stainless steel bending, mild steel bending, press brake"/>
+        <meta charSet="utf-8" />
+      </Helmet>
       <div className="container-fluid bg-white">
         <div className="row pt-5">
           <div className="container press-container">
@@ -114,6 +124,7 @@ class Press extends Component {
             </div>
           </div>
         </div>
+      </div>
       </div>
     );
   }

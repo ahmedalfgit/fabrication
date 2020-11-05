@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
+import {Helmet} from 'react-helmet';
+
+//images
 import LaserCarousel from "./components/laserCarousel.js";
 import ProjectImg from "../src/assets/fab-project-img-1.jpg";
 import LaserImg from "../src/assets/laser-img.png";
@@ -13,6 +16,13 @@ class Laser extends Component {
 
   render() {
     return (
+      <div className="wrapper">
+        <Helmet>
+        <title>Fiber Laser Cutting</title>
+        <meta name="description" content="Serpentix Fabrication | Laser cutting for all types of sheet metals up  to 1/2 inch."/>
+		<meta name="keywords" content="laser cutting, aluminum laser cutting, mild steel laser cutting, stainless steel laser cutting, fiber laser cutting"/>
+        <meta charSet="utf-8" />
+      </Helmet>
       <div className="container-fluid bg-white">
         <div className="row pt-5">
           <div className="laser-container container">
@@ -97,6 +107,7 @@ class Laser extends Component {
             </div>
           </div>
         </div>
+      </div>
       </div>
     );
   }

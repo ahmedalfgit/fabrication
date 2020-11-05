@@ -1,5 +1,7 @@
 import React, { Component } from "react";
+import {Helmet} from 'react-helmet';
 
+//images
 import fusionDesign from "../src/assets/fusion-design.jpg";
 import autoCadDesign from "../src/assets/autocad-design.jpg";
 import solidWorksDesign from "../src/assets/solidWorks-design.jpg";
@@ -13,6 +15,12 @@ class design extends Component {
 
   render() {
     return (
+      <div className="wrapper">
+        <Helmet>
+        <title>Manufacturing Design</title>
+        <meta name="description" content="Serpentix Fabrication | Manufacturing design for CNC machines | SolidWorks, AutoCAD, Illustrator, and Fusion 360"/>
+        <meta charSet="utf-8" />
+      </Helmet>
       <div className="container-fluid pt-5 design-container pb-5">
         <div className="row design-row mt-md-5">
           <div className="container design-container">
@@ -89,6 +97,7 @@ class design extends Component {
             </div>
           </div>
         </div>
+      </div>
       </div>
     );
   }
